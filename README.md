@@ -1,1 +1,1 @@
-# tmplate für die fallstudie
+# template für die fallstudie
