@@ -1,1 +1,13 @@
-
+# Ignore everything in a root
+/*
+# But not files with extension .tex or .pdf
+/*
+!/*.tex
+!/*.pdf
+!/*/
+/*/**/*
+!/*/**/
+!/*/**/*.tex
+!/*/**/*.pdf
+!/*.tex
+!/*.pdf
