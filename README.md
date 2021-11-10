@@ -12,3 +12,6 @@ Ich habe folgende settings verwendet.
 	"latex-workshop.view.pdf.viewer": "tab",
 	"latex-workshop.docker.image.latex": "tianon/latex",
 	// End
+
+Nützliche Links:
+http://namsu.de/Extra/pakete/ampGerman.html <-- Sprache
