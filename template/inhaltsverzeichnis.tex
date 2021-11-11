@@ -1,12 +1,20 @@
-%-----------------------------------
-% Inhaltsverzeichnis
-%-----------------------------------
-% Um das Tabellen- und Abbbildungsverzeichnis zu de/aktivieren ganz oben in Documentclass schauen
-\setcounter{page}{2}
+
 \addtocontents{toc}{\protect\enlargethispage{-20mm}}% Die Zeile sorgt dafür, dass das Inhaltsverzeichnisseite auf die zweite Seite gestreckt wird und somit schick aussieht. Das sollte eigentlich automatisch funktionieren. Wer rausfindet wie, kann das gern ändern.
 \setcounter{tocdepth}{4}
+
+
+
+
+%Inhaltsverzeichnis
 \tableofcontents
+\pagenumbering{Roman}
+
+%das ist nur junk zum testen
 \newpage
+\setcounter{page}{1}
 
 \addtocontents{toc}{\setcounter{tocdepth}{1}}
 \section{A section}
+\newpage
+\section{B section}
+
