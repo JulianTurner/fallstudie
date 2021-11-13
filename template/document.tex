@@ -1,20 +1,38 @@
-%set the fontsize and start
-\documentclass[12pt,oneside,titlepage,listof=totoc,bibliography=totoc]{scrartcl}
-%set papersheet and margins
+%use scrbook and set dotted line
+\documentclass[toc=chapterentrywithdots,openany]{scrbook}
+%use a4paper for a4 paper and size 
 \usepackage[a4paper,left=30mm,right=30mm,top=30mm, bottom=30mm]{geometry}
+%use german
 \usepackage{german}
+%silence a not relevant warning
+%https://tex.stackexchange.com/questions/349473/suppress-warning-usage-of-package-fancyhdr-togetherscrbook-with-a-koma-scr
+\usepackage{silence}
+\WarningFilter{scrbook}{Usage of package `fancyhdr'}
 
-%set the font
+%use colorpackage to set font colors
+\usepackage{xcolor}
+%use fancyhdr to set the header
+\usepackage{fancyhdr}
+%use helvetica font
 \usepackage[]{helvet}
-
+%use tocbibind to see the toc in the toc
+\usepackage{tocbibind}
+%user hyperref to add links
+\usepackage{hyperref}
+%use graphicx to add images
+\usepackage{graphicx}
+%path for the images
+\graphicspath{ {figures/} }
 %renewcommand to apply the font
 \renewcommand\familydefault{\sfdefault}
 
-%Package for graphics
+%use graphicx to add images
 \usepackage{graphicx}
 
-%Package for Umlaute
+%use inputenc to set the encoding
 \usepackage[utf8]{inputenc}
+
+
 
 %start the document
 \begin{document}
@@ -22,10 +40,30 @@
 %titlepage
 \input{titlepage}
 
-\newpage
+%pagenumbering
+\fancypagestyle{plain}{%
+	\fancyhf{} % clear all header and footer fields
+	\fancyhead{} % clear all header fields
+	\fancyfoot{} % clear all footer fields
+	\fancyhead[C]{\textcolor{gray}\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+%use roman for the page number
+\pagenumbering{Roman}
+%set the toc to 2
+\setcounter{page}{2}
+
 
 %inhaltsverzeichnis
 \input{inhaltsverzeichnis}
-
+%abbildungen
+\input{abbildungsverzeichnis}
+\newpage
+%tabellen
+\input{tabellenverzeichnis}
+\newpage
+%symbole und formeln
+\input{formelverezeichnis}
 %end of document
 \end{document}
