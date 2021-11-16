@@ -9,6 +9,17 @@
 \usepackage{silence}
 \WarningFilter{scrbook}{Usage of package `fancyhdr'}
 
+%reset the counter to have no chapter numberings
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+%add prefix to the figure name
+\usepackage{titletoc}
+\titlecontents{figure}[0mm]%
+    {\makebox{Bild: ~}}%
+    {\makebox{\thecontentslabel\quad}}%
+    {}%
+    {\enspace\dotfill\enspace\thecontentspage}
 
 %use colorpackage to set font colors
 \usepackage{xcolor}
