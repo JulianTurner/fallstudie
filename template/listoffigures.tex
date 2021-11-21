@@ -1,0 +1,14 @@
+%reset the counter to have no chapter numberings
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+%reset the figure name
+\renewcommand{\figurename}{Bild}
+
+%format the figure appereance in tof
+\titlecontents{figure}[0mm]%
+{Bild }%
+{\thecontentslabel\quad: ~}%
+{}%
+{\enspace\dotfill\enspace\thecontentspage}
+

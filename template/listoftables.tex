@@ -1,0 +1,11 @@
+%reset the counter
+\setcounter{table}{0}
+%set page numbering to arabic
+\renewcommand{\thetable}{\arabic{table}}
+
+%format the apperence of the table
+\titlecontents{table}[0mm]%
+{Tabelle }%
+{\thecontentslabel\quad: ~}%
+{}%
+{\enspace\dotfill\enspace\thecontentspage}
