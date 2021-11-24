@@ -1,15 +1,19 @@
-# template für die Fallstudie
+# tmTemplate für FOM Fallstudien
 
-installiert euch https://tug.org/texworks/#Getting_TeXworks
+Installiert euch https://tug.org/texworks/#Getting_TeXworks
 
-in VSCode die Extension https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop
+In VSCODE habe ich die Extension verwendet. https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop
 
-Ich habe folgende settings verwendet.
+Ich habe folgende settings in VSCODE verwendet.
 
-	// latex
-	"latex-workshop.docker.enabled": true,
-	"latex-workshop.latex.outDir": "./out",
-	"latex-workshop.synctex.afterBuild.enabled": true,
-	"latex-workshop.view.pdf.viewer": "tab",
-	"latex-workshop.docker.image.latex": "tianon/latex",
-	// End
+````
+// latex
+"latex-workshop.latex.outDir": "./out",
+"latex-workshop.synctex.afterBuild.enabled": true,
+"latex-workshop.view.pdf.viewer": "tab",
+"latex-workshop.docker.image.latex": "tianon/latex",
+// End
+
+````
+Nützliche Links:
+http://namsu.de/Extra/pakete/ampGerman.html <-- Sprache
