@@ -14,3 +14,5 @@
 !/*.
 !/*.png
 !*.jpg
+!*/*.json
+!*/Dockerfile
