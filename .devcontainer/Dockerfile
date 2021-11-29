@@ -20,8 +20,8 @@ RUN apt-get update \
 	texlive-plain-generic \
 	chktex \
 	texlive-luatex
-	# texlive \
-	# biber \
+# texlive \
+# biber \
 
 
 # Uses "Spaceship" theme with some customization. Uses some bundled plugins and installs some more from github
