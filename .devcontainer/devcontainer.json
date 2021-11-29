@@ -30,7 +30,8 @@
 		"github.github-vscode-theme",
 		"pkief.material-icon-theme",
 		"visualstudioexptteam.vscodeintellicode",
-		"ms-vsliveshare.vsliveshare"
+		"ms-vsliveshare.vsliveshare",
+		"mhutchie.git-graph"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
