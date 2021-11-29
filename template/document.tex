@@ -1,0 +1,43 @@
+%use scrbook and set dotted line
+\documentclass[toc=chapterentrywithdots,openany]{scrbook}
+%stores all imports
+\input{packages.tex}
+
+%set the caption to the left side
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+%options for figures
+\input{listoffigures.tex}
+%options for tables
+\input{listoftables.tex}
+
+%renewcommand to apply the font
+\renewcommand\familydefault{\sfdefault}
+\setuptoc{toc}{totoc}
+%start the document
+\begin{document}
+
+%titlepage
+\input{titlepage.tex}
+%inhaltsverzeichnis
+\input{inhaltsverzeichnis.tex}
+
+%Inhaltsverzeichnis
+\tableofcontents
+
+%abbildungen & tabellen
+\listoffigures
+\listoftables
+
+\newpage
+
+\input{pagestyle.tex}
+
+%start
+\input{01_einleitung/einleitung.tex}
+\input{02_hauptteil/hauptteil.tex}
+\input{03_schluss/schluss.tex}
+%end
+
+%end of document
+\end{document}
