@@ -10,6 +10,9 @@
 \input{listoffigures.tex}
 %options for tables
 \input{listoftables.tex}
+\usepackage[acronym]{glossaries}
+\makeglossaries
+\input{acronyms.tex}
 
 %renewcommand to apply the font
 \renewcommand\familydefault{\sfdefault}
@@ -22,12 +25,19 @@
 %inhaltsverzeichnis
 \input{inhaltsverzeichnis.tex}
 
+
 %Inhaltsverzeichnis
 \tableofcontents
 
 %abbildungen & tabellen
 \listoffigures
+\addcontentsline{toc}{chapter}{\protect\listfigurename}
+
+
 \listoftables
+\addcontentsline{toc}{chapter}{\protect\listtablename}
+\printglossary[type=\acronymtype,title=Abkürzungsverzeichnis]
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 
 \newpage
 
