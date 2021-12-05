@@ -1,0 +1,55 @@
+%variableto fill
+\newcommand{\Thema}{Mein Thema}
+\newcommand{\Name}{Vorname nachname}
+\newcommand{\Gutachter}{Dr. Herbert Bauer}
+\newcommand{\Matrikelnummer}{123456}
+\newcommand{\Abgabedatum}{09.01.2022}
+
+
+
+
+\begin{titlepage}
+	\newgeometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+	%center the logo and display the FOM graphic
+	\begin{center}
+		\includegraphics[width=2.3cm]{assets/fomLogo.pdf}\\
+		\vspace{.5cm}
+		%strong text
+		\begin{Large}\textbf{FOM Hochschule für Ökonomie und Management}\end{Large}\\
+		\vspace{.5cm}
+		Hochschulzentrum München
+
+		\vspace{2cm}
+	\end{center}
+
+	%create big space
+	\bigskip
+
+	\begin{center}
+		%bold text
+		\textbf{Seminararbeit}\\
+		\vspace{0.2cm}
+		Im Rahmen des Moduls\\
+		\vspace{0.5cm}
+		Arbeitsmethoden und Softwareunterstützung\\
+		\vspace{2cm}
+		Über das Thema\\
+		\vspace{0.5cm}
+		%bold text
+		\begin{Large}\textbf{\textbf{\Thema}}\end{Large}\\
+
+		\vspace{2cm}
+		von\\
+		\vspace{0.5cm}
+		\begin{Large}\textbf{\textbf{\Name}}\end{Large}\\
+	\end{center}
+
+	%postion in bottom left
+	\begin{figure}[b]
+
+		Gutachter: \Gutachter       \\
+		Matrikelnummer: \Matrikelnummer \\
+		Abgabedatum: \Abgabedatum
+	\end{figure}
+
+\end{titlepage}
