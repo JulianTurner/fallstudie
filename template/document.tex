@@ -11,6 +11,21 @@
 %options for tables
 \input{listoftables.tex}
 
+\usepackage{acro}
+
+\DeclareAcronym{usa}{
+  short=USA,
+  long=United States of America,
+}
+\DeclareAcronym{eu}{
+  short=EU,
+  long=European Union,
+}
+\DeclareAcronym{ussr}{
+  short=USSR,
+  long=Union of Soviet Socialist Republics,
+}
+
 %renewcommand to apply the font
 \renewcommand\familydefault{\sfdefault}
 \setuptoc{toc}{totoc}
@@ -21,14 +36,21 @@
 \input{titlepage.tex}
 %inhaltsverzeichnis
 \input{inhaltsverzeichnis.tex}
+\input{acronyms.tex}
 
 %Inhaltsverzeichnis
 \tableofcontents
 
 %abbildungen & tabellen
 \listoffigures
-\listoftables
+\addcontentsline{toc}{chapter}{\protect\listfigurename}
 
+
+\listoftables
+\addcontentsline{toc}{chapter}{\protect\listtablename}
+\newpage
+\printacronyms
+\addcontentsline{toc}{chapter}{Abkürzungen}
 \newpage
 
 \input{pagestyle.tex}
