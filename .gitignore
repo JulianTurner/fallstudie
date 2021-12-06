@@ -16,3 +16,4 @@
 !*.jpg
 !*/*.json
 !*/Dockerfile
+!*/*.acr
