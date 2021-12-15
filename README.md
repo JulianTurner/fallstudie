@@ -6,5 +6,5 @@ Anschließend einen neuen Branch mit eurem Namen erstellen, sowie die Variablen 
   
 Nützliche Links:
 
-http://namsu.de/Extra/pakete/ampGerman.html <-- Sprache
+http://namsu.de/Extra/pakete/ampGerman.html <-- Sprache  
 https://www.heise.de/tipps-tricks/Abkuerzungsverzeichnis-in-LaTeX-erstellen-4982473.html <-- Acronyme
