@@ -31,7 +31,9 @@
 		"pkief.material-icon-theme",
 		"visualstudioexptteam.vscodeintellicode",
 		"ms-vsliveshare.vsliveshare",
-		"mhutchie.git-graph"
+		"mhutchie.git-graph",
+		"streetsidesoftware.code-spell-checker",
+		"streetsidesoftware.code-spell-checker-german"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
