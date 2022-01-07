@@ -4,7 +4,9 @@
 	"ignorePaths": [],
 	"dictionaryDefinitions": [],
 	"dictionaries": [],
-	"words": [],
+	"words": [
+		"Beschleunigsverhalten"
+	],
 	"ignoreWords": [],
 	"import": []
 }
