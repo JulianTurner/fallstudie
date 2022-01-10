@@ -1,5 +1,5 @@
 %use scrbook and set dotted line
-\documentclass[toc=chapterentrywithdots,openany]{scrbook}
+\documentclass[12pt,toc=chapterentrywithdots,openany]{scrbook}
 %stores all imports
 \input{packages.tex}
 
@@ -35,12 +35,12 @@
 \tableofcontents
 
 %abbildungen & tabellen
-\listoffigures
-\addcontentsline{toc}{chapter}{\protect\listfigurename}
+% \listoffigures
+% \addcontentsline{toc}{chapter}{\protect\listfigurename}
 
 
-\listoftables
-\addcontentsline{toc}{chapter}{\protect\listtablename}
+% \listoftables
+% \addcontentsline{toc}{chapter}{\protect\listtablename}
 \input{acronyms.tex}
 
 
@@ -50,6 +50,16 @@
 %Fallstudie
 \input{Fallstudie/Fallstudie.tex}
 %end
+
+
+\input{listofliteratures.tex}
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+
+%supress page numbering
+\pagenumbering{gobble}
+\input{erklärung.tex}
+\input{abstract.tex}
+
 
 %end of document
 \end{document}
