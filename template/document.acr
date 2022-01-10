@@ -2,9 +2,18 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{G}\relax \glsresetentrylist %
-\glossentry{gcd}{\glossaryentrynumbers{\relax 
+
+\glossentry{bat}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}}}\glsgroupskip
 \glsgroupheading{L}\relax \glsresetentrylist %
-\glossentry{lcm}{\glossaryentrynumbers{\relax 
+
+\glossentry{btc}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}}}%
+
+\glossentry{p2p}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}}}%
+
+\glossentry{dlt}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5}}}%
+
 \end{theglossary}\glossarypostamble

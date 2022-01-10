@@ -1,5 +1,7 @@
 %use scrbook and set dotted line
 \documentclass[toc=chapterentrywithdots,openany]{scrbook}
+
+
 %stores all imports
 \input{packages.tex}
 
@@ -9,7 +11,7 @@
 %options for figures
 \input{listoffigures.tex}
 %options for tables
-\input{listoftables.tex}
+%\input{listoftables.tex}
 \usepackage[acronym]{glossaries}
 \makeglossaries
 \input{acronyms.tex}
@@ -17,7 +19,11 @@
 %renewcommand to apply the font
 \renewcommand\familydefault{\sfdefault}
 \setuptoc{toc}{totoc}
+\newcommand{\paragraphtitle}[1]{\paragraph{#1}\mbox{}\\}
 %start the document
+\setcounter{tocdepth}{3} % seting level of numbering (default for "report" is 3). With ''-1'' you have non number also for chapters
+\setcounter{secnumdepth}{3} % seting level of numbering (default for "report" is 3). With ''-1'' you have non number also for chapters
+%\setcounter{tocdepth}{5} % if you want all the levels in your table of contents
 \begin{document}
 
 %titlepage
@@ -34,8 +40,8 @@
 \addcontentsline{toc}{chapter}{\protect\listfigurename}
 
 
-\listoftables
-\addcontentsline{toc}{chapter}{\protect\listtablename}
+%\listoftables
+%\addcontentsline{toc}{chapter}{\protect\listtablename}
 \printglossary[type=\acronymtype,title=Abkürzungsverzeichnis,nonumberlist]
 \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 
@@ -45,10 +51,16 @@
 
 %start
 \input{01_einleitung/einleitung.tex}
-\input{01_einleitung/grundlagen.tex}
 \input{02_hauptteil/hauptteil.tex}
 \input{03_schluss/schluss.tex}
+\input{04_anhang/literaturverzeichnis.tex}
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
 %end
+
+%supress page numbering
+\pagenumbering{gobble}
+\input{04_anhang/erklaerung.tex}
+\input{04_anhang/abstract.tex}
 
 %end of document
 \end{document}
